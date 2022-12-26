@@ -1,0 +1,50 @@
+{
+  "productList": [
+    {
+      "productName": "tomato",
+      "category": "Vegetables",
+      "freshness": "Brand New",
+      "price": 13,
+      "comment": "this good for health",
+      "date": "2022-12-07T18:30:00.000Z",
+      "id": 1
+    },
+    {
+      "productName": "mango",
+      "category": "Fruits",
+      "freshness": "Second Hand",
+      "price": 100,
+      "comment": "this is not fresh",
+      "date": "2022-12-17T18:30:00.000Z",
+      "id": 2
+    },
+    {
+      "productName": "jack fruit",
+      "category": "Vegetables",
+      "freshness": "Brand New",
+      "price": 50,
+      "comment": "it is a fresh fruit",
+      "date": "2022-12-21T18:30:00.000Z",
+      "id": 3
+    },
+    {
+      "productName": "ddd",
+      "category": "Fruits",
+      "freshness": "Brand New",
+      "price": 11,
+      "comment": "ss",
+      "date": "2022-12-07T18:30:00.000Z",
+      "id": 4
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
