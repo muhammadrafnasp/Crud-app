@@ -1,24 +1,5 @@
 {
-  "productList": [
-    {
-      "productName": "tomato",
-      "category": "Vegetables",
-      "freshness": "Brand New",
-      "price": 130,
-      "comment": "this good for health",
-      "date": "2022-12-07T18:30:00.000Z",
-      "id": 1
-    },
-    {
-      "productName": "mango",
-      "category": "Fruits",
-      "freshness": "Refurbished",
-      "price": 100,
-      "comment": "this is not fresh",
-      "date": "2022-12-17T18:30:00.000Z",
-      "id": 2
-    }
-  ],
+  "productList": [],
   "comments": [
     {
       "id": 1,

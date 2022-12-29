@@ -9,7 +9,7 @@ import { ApiService } from '../services/api.service';
   styleUrls: ['./dialog.component.css']
 })
 export class DialogComponent implements OnInit {
-  freshnessList = ["Brand New", "Second Hand", "Refurbished"];
+  freshnessList = ["Brand New", "Second Hand"];
   productForm !: FormGroup
   actionBtn:string = "Save"
 
@@ -20,21 +20,21 @@ export class DialogComponent implements OnInit {
 
   ngOnInit(): void {
     this.productForm = this.formBuilder.group({
-      productName: ['',Validators.required],
+      vehicleName: ['',Validators.required],
       category: ['',Validators.required],
       freshness:['',Validators.required],
       price: ['',Validators.required],
-      comment: ['',Validators.required],
+      features: ['',Validators.required],
       date: ['',Validators.required]
     });
 
      if(this.editData){
       this.actionBtn = "Update";
-      this.productForm.controls['productName'].setValue(this.editData.productName);
+      this.productForm.controls['vehicleName'].setValue(this.editData.vehicleName);
       this.productForm.controls['category'].setValue(this.editData.category);
       this.productForm.controls['freshness'].setValue(this.editData.freshness);
       this.productForm.controls['price'].setValue(this.editData.price);
-      this.productForm.controls['comment'].setValue(this.editData.comment);
+      this.productForm.controls['features'].setValue(this.editData.features);
       this.productForm.controls['date'].setValue(this.editData.date);
 
      }

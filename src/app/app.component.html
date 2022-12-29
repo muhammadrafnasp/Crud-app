@@ -1,8 +1,8 @@
 <mat-toolbar color="primary">
   <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-   <mat-icon>supervised_user_circle</mat-icon>
+    <mat-icon>time_to_leave</mat-icon>
  </button>
- <span>CRUD using Matreial UI</span>
+ <span>MRP Autokraft-BMW</span>
  <span class="example-spacer"></span>
  <button mat-raised-button color="warn" (click)="openDialog()">Add Product</button>
 </mat-toolbar>
@@ -11,16 +11,16 @@
   <div style="margin-top: 10px;">
     <mat-form-field>
       <mat-label>Filter</mat-label>
-      <input matInput (keyup)="applyFilter($event)" placeholder="Ex. Mia" #input>
+      <input matInput (keyup)="applyFilter($event)" placeholder="Ex. Car" #input>
     </mat-form-field>
     
     <div class="mat-elevation-z8">
       <table mat-table [dataSource]="dataSource" matSort>
     
         <!-- ID Column -->
-        <ng-container matColumnDef="productName">
-          <th mat-header-cell *matHeaderCellDef mat-sort-header> ProductName </th>
-          <td mat-cell *matCellDef="let row"> {{row.productName}} </td>
+        <ng-container matColumnDef="vehicleName">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header> VehicleName </th>
+          <td mat-cell *matCellDef="let row"> {{row.vehicleName}} </td>
         </ng-container>
     
         <!-- Progress Column -->
@@ -46,9 +46,9 @@
           <td mat-cell *matCellDef="let row"> {{row.price | currency}} </td>
         </ng-container>
 
-        <ng-container matColumnDef="comment">
-          <th mat-header-cell *matHeaderCellDef mat-sort-header> Comment</th>
-          <td mat-cell *matCellDef="let row"> {{row.comment}} </td>
+        <ng-container matColumnDef="features">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header> Features</th>
+          <td mat-cell *matCellDef="let row"> {{row.features}} </td>
         </ng-container>
         
         <ng-container matColumnDef="action">
